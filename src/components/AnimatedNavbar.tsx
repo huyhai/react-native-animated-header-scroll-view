@@ -21,7 +21,7 @@ const AnimatedNavbar = ({
     <>
       <Animated.View
         style={[
-          styles.container,
+          // styles.container,
           styles.header,
           styleNavbar,
           {
