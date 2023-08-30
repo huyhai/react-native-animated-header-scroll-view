@@ -9,6 +9,7 @@ const AnimatedNavbar = ({
   OverflowHeaderComponent,
   TopNavbarComponent,
   headerHeight,
+  styleNavbar,
 }: AnimatedNavbarProps) => {
   const [headerOpacity, overflowHeaderOpacity] = useAnimateNavbar(
     scroll,
@@ -22,6 +23,7 @@ const AnimatedNavbar = ({
         style={[
           styles.container,
           styles.header,
+          styleNavbar,
           {
             zIndex: headerOpacity,
             height: headerHeight,

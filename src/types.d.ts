@@ -59,6 +59,7 @@ export type AnimatedNavbarProps = {
   TopNavbarComponent?: JSX.Element;
   imageHeight: number;
   headerHeight: number;
+
 };
 
 export type AnimatedHeaderProps = {
