@@ -7,6 +7,7 @@ import {
 } from 'react-native';
 import React from 'react';
 import type { AnimatedHeaderProps } from '../types';
+import FastImage from 'react-native-fast-image';
 
 export const AnimatedHeader = ({
   HeaderComponent,
@@ -19,7 +20,7 @@ export const AnimatedHeader = ({
 }: AnimatedHeaderProps) => {
   const { width } = useWindowDimensions();
   const AnimatedImageBackground =
-    Animated.createAnimatedComponent(ImageBackground);
+    Animated.createAnimatedComponent(FastImage);
   return (
     <View
       style={[
