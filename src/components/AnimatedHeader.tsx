@@ -1,6 +1,5 @@
 import {
   Animated,
-  ImageBackground,
   StyleSheet,
   useWindowDimensions,
   View,
@@ -68,7 +67,7 @@ export const AnimatedHeader = ({
           )}
         </>
       ) : (
-        <Animated.Image
+        <AnimatedImageBackground
           source={headerImage}
           style={[
             { height: imageHeight, width: width * 1.2 },
